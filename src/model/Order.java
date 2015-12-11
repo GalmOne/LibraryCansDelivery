@@ -16,6 +16,7 @@ public class Order {
     private Integer number;
     private Date creationDate;
     private String status;
+    private double remise;
     private Customer customer;
 
     public Order(Integer number, Date creationDate, String status) {
@@ -59,6 +60,22 @@ public class Order {
 
     public void setClient(Customer idClient) {
         this.customer = idClient;
+    }
+
+    public double getRemise() {
+        return remise;
+    }
+
+    public void setRemise(double remise) {
+        this.remise = remise;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
     
     

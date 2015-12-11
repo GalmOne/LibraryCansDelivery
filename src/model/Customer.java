@@ -25,7 +25,14 @@ public class Customer {
     private String street;
     private int posteCode;
     private String city;
-
+    private String country;
+    
+    
+     public Customer ()
+    {
+        
+    }
+    
     public Customer(String name, String firstname, String login, String password, Date birthdate, String email, String gsm, String number, String street, int posteCode, String city) {
         this.name = name;
         this.firstname = firstname;
@@ -54,13 +61,18 @@ public class Customer {
         this.posteCode = posteCode;
         this.city = city;
     }
-    
-    
-    
-    public Customer ()
-    {
-        
+
+    public String getCountry() {
+        return country;
     }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+    
+    
+    
+   
 
     public String getName() {
         return name;
