@@ -16,9 +16,9 @@ public class OrderContents {
     private double price;
     private Order order;
 
-    public OrderContents(Can can,int quantity, Order order) {
+    public OrderContents(Can can, Order order) {
         this.can = can;
-        this.quantity = quantity;
+        this.quantity = 1;
         this.order = order;
         this.price = quantity * can.getPrice();
     }
